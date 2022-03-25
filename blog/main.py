@@ -4,8 +4,8 @@ from .models import *
 from .database import engine
 from fastapi.middleware.cors import CORSMiddleware
 from .routers import blog, user, login
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer
+from fastapi import FastAPI
 
 
 Base.metadata.create_all(engine)

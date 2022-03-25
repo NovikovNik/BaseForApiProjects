@@ -1,7 +1,7 @@
-from blog.token import create_access_token, verify_token
+from blog.token import create_access_token
 from ..database import get_db
 from fastapi.security import OAuth2PasswordRequestForm
-from .. import schemas, models
+from .. import models
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from ..hashing import Hash
